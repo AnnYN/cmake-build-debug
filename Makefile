@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/yanan/CLionProjects/untitled1/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,45 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named i
+
+# Build rule for target.
+i : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 i
+.PHONY : i
+
+# fast build rule for target.
+i/fast:
+	$(MAKE) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/build
+.PHONY : i/fast
+
+#=============================================================================
+# Target rules for targets named h
+
+# Build rule for target.
+h : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 h
+.PHONY : h
+
+# fast build rule for target.
+h/fast:
+	$(MAKE) -f CMakeFiles/h.dir/build.make CMakeFiles/h.dir/build
+.PHONY : h/fast
+
+#=============================================================================
+# Target rules for targets named g
+
+# Build rule for target.
+g : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 g
+.PHONY : g
+
+# fast build rule for target.
+g/fast:
+	$(MAKE) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/build
+.PHONY : g/fast
 
 #=============================================================================
 # Target rules for targets named f
@@ -307,6 +346,87 @@ untitled1/fast:
 1-14.c.s:
 	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/1-14.c.s
 .PHONY : 1-14.c.s
+
+6-4.o: 6-4.cpp.o
+
+.PHONY : 6-4.o
+
+# target to build an object file
+6-4.cpp.o:
+	$(MAKE) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/6-4.cpp.o
+.PHONY : 6-4.cpp.o
+
+6-4.i: 6-4.cpp.i
+
+.PHONY : 6-4.i
+
+# target to preprocess a source file
+6-4.cpp.i:
+	$(MAKE) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/6-4.cpp.i
+.PHONY : 6-4.cpp.i
+
+6-4.s: 6-4.cpp.s
+
+.PHONY : 6-4.s
+
+# target to generate assembly for a file
+6-4.cpp.s:
+	$(MAKE) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/6-4.cpp.s
+.PHONY : 6-4.cpp.s
+
+6-5.o: 6-5.cpp.o
+
+.PHONY : 6-5.o
+
+# target to build an object file
+6-5.cpp.o:
+	$(MAKE) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/6-5.cpp.o
+.PHONY : 6-5.cpp.o
+
+6-5.i: 6-5.cpp.i
+
+.PHONY : 6-5.i
+
+# target to preprocess a source file
+6-5.cpp.i:
+	$(MAKE) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/6-5.cpp.i
+.PHONY : 6-5.cpp.i
+
+6-5.s: 6-5.cpp.s
+
+.PHONY : 6-5.s
+
+# target to generate assembly for a file
+6-5.cpp.s:
+	$(MAKE) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/6-5.cpp.s
+.PHONY : 6-5.cpp.s
+
+6-6.o: 6-6.cpp.o
+
+.PHONY : 6-6.o
+
+# target to build an object file
+6-6.cpp.o:
+	$(MAKE) -f CMakeFiles/h.dir/build.make CMakeFiles/h.dir/6-6.cpp.o
+.PHONY : 6-6.cpp.o
+
+6-6.i: 6-6.cpp.i
+
+.PHONY : 6-6.i
+
+# target to preprocess a source file
+6-6.cpp.i:
+	$(MAKE) -f CMakeFiles/h.dir/build.make CMakeFiles/h.dir/6-6.cpp.i
+.PHONY : 6-6.cpp.i
+
+6-6.s: 6-6.cpp.s
+
+.PHONY : 6-6.s
+
+# target to generate assembly for a file
+6-6.cpp.s:
+	$(MAKE) -f CMakeFiles/h.dir/build.make CMakeFiles/h.dir/6-6.cpp.s
+.PHONY : 6-6.cpp.s
 
 d.o: d.c.o
 
@@ -530,13 +650,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
+	@echo "... i"
 	@echo "... edit_cache"
+	@echo "... h"
+	@echo "... g"
 	@echo "... f"
 	@echo "... e"
 	@echo "... c"
 	@echo "... b"
 	@echo "... 3"
-	@echo "... rebuild_cache"
 	@echo "... 2"
 	@echo "... 1"
 	@echo "... a"
@@ -550,6 +673,15 @@ help:
 	@echo "... 1-14.o"
 	@echo "... 1-14.i"
 	@echo "... 1-14.s"
+	@echo "... 6-4.o"
+	@echo "... 6-4.i"
+	@echo "... 6-4.s"
+	@echo "... 6-5.o"
+	@echo "... 6-5.i"
+	@echo "... 6-5.s"
+	@echo "... 6-6.o"
+	@echo "... 6-6.i"
+	@echo "... 6-6.s"
 	@echo "... d.o"
 	@echo "... d.i"
 	@echo "... d.s"

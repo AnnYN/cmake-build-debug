@@ -60,6 +60,117 @@ CMAKE_SOURCE_DIR = /Users/yanan/CLionProjects/untitled1
 CMAKE_BINARY_DIR = /Users/yanan/CLionProjects/untitled1/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/i.dir
+
+# All Build rule for target.
+CMakeFiles/i.dir/all:
+	$(MAKE) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/depend
+	$(MAKE) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target i"
+.PHONY : CMakeFiles/i.dir/all
+
+# Include target in all.
+all: CMakeFiles/i.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/i.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/i.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/i.dir/rule
+
+# Convenience name for target.
+i : CMakeFiles/i.dir/rule
+
+.PHONY : i
+
+# clean rule for target.
+CMakeFiles/i.dir/clean:
+	$(MAKE) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/clean
+.PHONY : CMakeFiles/i.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/i.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/h.dir
+
+# All Build rule for target.
+CMakeFiles/h.dir/all:
+	$(MAKE) -f CMakeFiles/h.dir/build.make CMakeFiles/h.dir/depend
+	$(MAKE) -f CMakeFiles/h.dir/build.make CMakeFiles/h.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target h"
+.PHONY : CMakeFiles/h.dir/all
+
+# Include target in all.
+all: CMakeFiles/h.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/h.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/h.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/h.dir/rule
+
+# Convenience name for target.
+h : CMakeFiles/h.dir/rule
+
+.PHONY : h
+
+# clean rule for target.
+CMakeFiles/h.dir/clean:
+	$(MAKE) -f CMakeFiles/h.dir/build.make CMakeFiles/h.dir/clean
+.PHONY : CMakeFiles/h.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/h.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/g.dir
+
+# All Build rule for target.
+CMakeFiles/g.dir/all:
+	$(MAKE) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/depend
+	$(MAKE) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=18,19 "Built target g"
+.PHONY : CMakeFiles/g.dir/all
+
+# Include target in all.
+all: CMakeFiles/g.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/g.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/g.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/g.dir/rule
+
+# Convenience name for target.
+g : CMakeFiles/g.dir/rule
+
+.PHONY : g
+
+# clean rule for target.
+CMakeFiles/g.dir/clean:
+	$(MAKE) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/clean
+.PHONY : CMakeFiles/g.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/g.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/f.dir
 
 # All Build rule for target.
@@ -362,7 +473,7 @@ clean: CMakeFiles/a.dir/clean
 CMakeFiles/untitled1.dir/all:
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/depend
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=18,19,20 "Built target untitled1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/yanan/CLionProjects/untitled1/cmake-build-debug/CMakeFiles --progress-num=24,25,26 "Built target untitled1"
 .PHONY : CMakeFiles/untitled1.dir/all
 
 # Include target in all.
