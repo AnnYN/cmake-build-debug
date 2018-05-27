@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named k
+
+# Build rule for target.
+k : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 k
+.PHONY : k
+
+# fast build rule for target.
+k/fast:
+	$(MAKE) -f CMakeFiles/k.dir/build.make CMakeFiles/k.dir/build
+.PHONY : k/fast
+
+#=============================================================================
+# Target rules for targets named j
+
+# Build rule for target.
+j : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 j
+.PHONY : j
+
+# fast build rule for target.
+j/fast:
+	$(MAKE) -f CMakeFiles/j.dir/build.make CMakeFiles/j.dir/build
+.PHONY : j/fast
+
+#=============================================================================
 # Target rules for targets named i
 
 # Build rule for target.
@@ -347,6 +373,33 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/1-14.c.s
 .PHONY : 1-14.c.s
 
+3-2.o: 3-2.cpp.o
+
+.PHONY : 3-2.o
+
+# target to build an object file
+3-2.cpp.o:
+	$(MAKE) -f CMakeFiles/j.dir/build.make CMakeFiles/j.dir/3-2.cpp.o
+.PHONY : 3-2.cpp.o
+
+3-2.i: 3-2.cpp.i
+
+.PHONY : 3-2.i
+
+# target to preprocess a source file
+3-2.cpp.i:
+	$(MAKE) -f CMakeFiles/j.dir/build.make CMakeFiles/j.dir/3-2.cpp.i
+.PHONY : 3-2.cpp.i
+
+3-2.s: 3-2.cpp.s
+
+.PHONY : 3-2.s
+
+# target to generate assembly for a file
+3-2.cpp.s:
+	$(MAKE) -f CMakeFiles/j.dir/build.make CMakeFiles/j.dir/3-2.cpp.s
+.PHONY : 3-2.cpp.s
+
 6-4.o: 6-4.cpp.o
 
 .PHONY : 6-4.o
@@ -427,6 +480,33 @@ untitled1/fast:
 6-6.cpp.s:
 	$(MAKE) -f CMakeFiles/h.dir/build.make CMakeFiles/h.dir/6-6.cpp.s
 .PHONY : 6-6.cpp.s
+
+86.o: 86.cpp.o
+
+.PHONY : 86.o
+
+# target to build an object file
+86.cpp.o:
+	$(MAKE) -f CMakeFiles/k.dir/build.make CMakeFiles/k.dir/86.cpp.o
+.PHONY : 86.cpp.o
+
+86.i: 86.cpp.i
+
+.PHONY : 86.i
+
+# target to preprocess a source file
+86.cpp.i:
+	$(MAKE) -f CMakeFiles/k.dir/build.make CMakeFiles/k.dir/86.cpp.i
+.PHONY : 86.cpp.i
+
+86.s: 86.cpp.s
+
+.PHONY : 86.s
+
+# target to generate assembly for a file
+86.cpp.s:
+	$(MAKE) -f CMakeFiles/k.dir/build.make CMakeFiles/k.dir/86.cpp.s
+.PHONY : 86.cpp.s
 
 d.o: d.c.o
 
@@ -651,6 +731,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... k"
+	@echo "... j"
 	@echo "... i"
 	@echo "... edit_cache"
 	@echo "... h"
@@ -673,6 +755,9 @@ help:
 	@echo "... 1-14.o"
 	@echo "... 1-14.i"
 	@echo "... 1-14.s"
+	@echo "... 3-2.o"
+	@echo "... 3-2.i"
+	@echo "... 3-2.s"
 	@echo "... 6-4.o"
 	@echo "... 6-4.i"
 	@echo "... 6-4.s"
@@ -682,6 +767,9 @@ help:
 	@echo "... 6-6.o"
 	@echo "... 6-6.i"
 	@echo "... 6-6.s"
+	@echo "... 86.o"
+	@echo "... 86.i"
+	@echo "... 86.s"
 	@echo "... d.o"
 	@echo "... d.i"
 	@echo "... d.s"
