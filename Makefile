@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named r
-
-# Build rule for target.
-r : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 r
-.PHONY : r
-
-# fast build rule for target.
-r/fast:
-	$(MAKE) -f CMakeFiles/r.dir/build.make CMakeFiles/r.dir/build
-.PHONY : r/fast
-
-#=============================================================================
 # Target rules for targets named n
 
 # Build rule for target.
@@ -148,6 +135,32 @@ q : cmake_check_build_system
 q/fast:
 	$(MAKE) -f CMakeFiles/q.dir/build.make CMakeFiles/q.dir/build
 .PHONY : q/fast
+
+#=============================================================================
+# Target rules for targets named t
+
+# Build rule for target.
+t : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 t
+.PHONY : t
+
+# fast build rule for target.
+t/fast:
+	$(MAKE) -f CMakeFiles/t.dir/build.make CMakeFiles/t.dir/build
+.PHONY : t/fast
+
+#=============================================================================
+# Target rules for targets named r
+
+# Build rule for target.
+r : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 r
+.PHONY : r
+
+# fast build rule for target.
+r/fast:
+	$(MAKE) -f CMakeFiles/r.dir/build.make CMakeFiles/r.dir/build
+.PHONY : r/fast
 
 #=============================================================================
 # Target rules for targets named p
@@ -936,6 +949,33 @@ p87.cpp.s:
 	$(MAKE) -f CMakeFiles/l.dir/build.make CMakeFiles/l.dir/p87.cpp.s
 .PHONY : p87.cpp.s
 
+p94.o: p94.cpp.o
+
+.PHONY : p94.o
+
+# target to build an object file
+p94.cpp.o:
+	$(MAKE) -f CMakeFiles/t.dir/build.make CMakeFiles/t.dir/p94.cpp.o
+.PHONY : p94.cpp.o
+
+p94.i: p94.cpp.i
+
+.PHONY : p94.i
+
+# target to preprocess a source file
+p94.cpp.i:
+	$(MAKE) -f CMakeFiles/t.dir/build.make CMakeFiles/t.dir/p94.cpp.i
+.PHONY : p94.cpp.i
+
+p94.s: p94.cpp.s
+
+.PHONY : p94.s
+
+# target to generate assembly for a file
+p94.cpp.s:
+	$(MAKE) -f CMakeFiles/t.dir/build.make CMakeFiles/t.dir/p94.cpp.s
+.PHONY : p94.cpp.s
+
 struct.o: struct.c.o
 
 .PHONY : struct.o
@@ -1051,15 +1091,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... r"
+	@echo "... edit_cache"
 	@echo "... n"
 	@echo "... q"
+	@echo "... t"
+	@echo "... r"
 	@echo "... p"
 	@echo "... l"
 	@echo "... k"
 	@echo "... j"
 	@echo "... i"
-	@echo "... edit_cache"
 	@echo "... o"
 	@echo "... h"
 	@echo "... m"
@@ -1134,6 +1175,9 @@ help:
 	@echo "... p87.o"
 	@echo "... p87.i"
 	@echo "... p87.s"
+	@echo "... p94.o"
+	@echo "... p94.i"
+	@echo "... p94.s"
 	@echo "... struct.o"
 	@echo "... struct.i"
 	@echo "... struct.s"
