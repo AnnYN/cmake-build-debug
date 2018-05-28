@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named r
+
+# Build rule for target.
+r : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 r
+.PHONY : r
+
+# fast build rule for target.
+r/fast:
+	$(MAKE) -f CMakeFiles/r.dir/build.make CMakeFiles/r.dir/build
+.PHONY : r/fast
+
+#=============================================================================
+# Target rules for targets named n
+
+# Build rule for target.
+n : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 n
+.PHONY : n
+
+# fast build rule for target.
+n/fast:
+	$(MAKE) -f CMakeFiles/n.dir/build.make CMakeFiles/n.dir/build
+.PHONY : n/fast
+
+#=============================================================================
 # Target rules for targets named q
 
 # Build rule for target.
@@ -241,6 +267,19 @@ g/fast:
 .PHONY : g/fast
 
 #=============================================================================
+# Target rules for targets named s
+
+# Build rule for target.
+s : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 s
+.PHONY : s
+
+# fast build rule for target.
+s/fast:
+	$(MAKE) -f CMakeFiles/s.dir/build.make CMakeFiles/s.dir/build
+.PHONY : s/fast
+
+#=============================================================================
 # Target rules for targets named f
 
 # Build rule for target.
@@ -252,6 +291,19 @@ f : cmake_check_build_system
 f/fast:
 	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/build
 .PHONY : f/fast
+
+#=============================================================================
+# Target rules for targets named 3
+
+# Build rule for target.
+3 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3
+.PHONY : 3
+
+# fast build rule for target.
+3/fast:
+	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/build
+.PHONY : 3/fast
 
 #=============================================================================
 # Target rules for targets named e
@@ -280,19 +332,6 @@ c/fast:
 .PHONY : c/fast
 
 #=============================================================================
-# Target rules for targets named n
-
-# Build rule for target.
-n : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 n
-.PHONY : n
-
-# fast build rule for target.
-n/fast:
-	$(MAKE) -f CMakeFiles/n.dir/build.make CMakeFiles/n.dir/build
-.PHONY : n/fast
-
-#=============================================================================
 # Target rules for targets named b
 
 # Build rule for target.
@@ -304,19 +343,6 @@ b : cmake_check_build_system
 b/fast:
 	$(MAKE) -f CMakeFiles/b.dir/build.make CMakeFiles/b.dir/build
 .PHONY : b/fast
-
-#=============================================================================
-# Target rules for targets named 3
-
-# Build rule for target.
-3 : cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 3
-.PHONY : 3
-
-# fast build rule for target.
-3/fast:
-	$(MAKE) -f CMakeFiles/3.dir/build.make CMakeFiles/3.dir/build
-.PHONY : 3/fast
 
 #=============================================================================
 # Target rules for targets named 2
@@ -558,6 +584,60 @@ untitled1/fast:
 3-4.cpp.s:
 	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/3-4.cpp.s
 .PHONY : 3-4.cpp.s
+
+3-5-1.o: 3-5-1.cpp.o
+
+.PHONY : 3-5-1.o
+
+# target to build an object file
+3-5-1.cpp.o:
+	$(MAKE) -f CMakeFiles/r.dir/build.make CMakeFiles/r.dir/3-5-1.cpp.o
+.PHONY : 3-5-1.cpp.o
+
+3-5-1.i: 3-5-1.cpp.i
+
+.PHONY : 3-5-1.i
+
+# target to preprocess a source file
+3-5-1.cpp.i:
+	$(MAKE) -f CMakeFiles/r.dir/build.make CMakeFiles/r.dir/3-5-1.cpp.i
+.PHONY : 3-5-1.cpp.i
+
+3-5-1.s: 3-5-1.cpp.s
+
+.PHONY : 3-5-1.s
+
+# target to generate assembly for a file
+3-5-1.cpp.s:
+	$(MAKE) -f CMakeFiles/r.dir/build.make CMakeFiles/r.dir/3-5-1.cpp.s
+.PHONY : 3-5-1.cpp.s
+
+3-5-2.o: 3-5-2.cpp.o
+
+.PHONY : 3-5-2.o
+
+# target to build an object file
+3-5-2.cpp.o:
+	$(MAKE) -f CMakeFiles/s.dir/build.make CMakeFiles/s.dir/3-5-2.cpp.o
+.PHONY : 3-5-2.cpp.o
+
+3-5-2.i: 3-5-2.cpp.i
+
+.PHONY : 3-5-2.i
+
+# target to preprocess a source file
+3-5-2.cpp.i:
+	$(MAKE) -f CMakeFiles/s.dir/build.make CMakeFiles/s.dir/3-5-2.cpp.i
+.PHONY : 3-5-2.cpp.i
+
+3-5-2.s: 3-5-2.cpp.s
+
+.PHONY : 3-5-2.s
+
+# target to generate assembly for a file
+3-5-2.cpp.s:
+	$(MAKE) -f CMakeFiles/s.dir/build.make CMakeFiles/s.dir/3-5-2.cpp.s
+.PHONY : 3-5-2.cpp.s
 
 6-4.o: 6-4.cpp.o
 
@@ -970,9 +1050,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
+	@echo "... r"
+	@echo "... n"
 	@echo "... q"
 	@echo "... p"
-	@echo "... rebuild_cache"
 	@echo "... l"
 	@echo "... k"
 	@echo "... j"
@@ -982,12 +1064,12 @@ help:
 	@echo "... h"
 	@echo "... m"
 	@echo "... g"
+	@echo "... s"
 	@echo "... f"
+	@echo "... 3"
 	@echo "... e"
 	@echo "... c"
-	@echo "... n"
 	@echo "... b"
-	@echo "... 3"
 	@echo "... 2"
 	@echo "... 1"
 	@echo "... a"
@@ -1013,6 +1095,12 @@ help:
 	@echo "... 3-4.o"
 	@echo "... 3-4.i"
 	@echo "... 3-4.s"
+	@echo "... 3-5-1.o"
+	@echo "... 3-5-1.i"
+	@echo "... 3-5-1.s"
+	@echo "... 3-5-2.o"
+	@echo "... 3-5-2.i"
+	@echo "... 3-5-2.s"
 	@echo "... 6-4.o"
 	@echo "... 6-4.i"
 	@echo "... 6-4.s"
