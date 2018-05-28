@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named q
+
+# Build rule for target.
+q : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 q
+.PHONY : q
+
+# fast build rule for target.
+q/fast:
+	$(MAKE) -f CMakeFiles/q.dir/build.make CMakeFiles/q.dir/build
+.PHONY : q/fast
+
+#=============================================================================
+# Target rules for targets named p
+
+# Build rule for target.
+p : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 p
+.PHONY : p
+
+# fast build rule for target.
+p/fast:
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/build
+.PHONY : p/fast
+
+#=============================================================================
+# Target rules for targets named l
+
+# Build rule for target.
+l : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 l
+.PHONY : l
+
+# fast build rule for target.
+l/fast:
+	$(MAKE) -f CMakeFiles/l.dir/build.make CMakeFiles/l.dir/build
+.PHONY : l/fast
+
+#=============================================================================
 # Target rules for targets named k
 
 # Build rule for target.
@@ -150,6 +189,19 @@ i/fast:
 .PHONY : i/fast
 
 #=============================================================================
+# Target rules for targets named o
+
+# Build rule for target.
+o : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 o
+.PHONY : o
+
+# fast build rule for target.
+o/fast:
+	$(MAKE) -f CMakeFiles/o.dir/build.make CMakeFiles/o.dir/build
+.PHONY : o/fast
+
+#=============================================================================
 # Target rules for targets named h
 
 # Build rule for target.
@@ -161,6 +213,19 @@ h : cmake_check_build_system
 h/fast:
 	$(MAKE) -f CMakeFiles/h.dir/build.make CMakeFiles/h.dir/build
 .PHONY : h/fast
+
+#=============================================================================
+# Target rules for targets named m
+
+# Build rule for target.
+m : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 m
+.PHONY : m
+
+# fast build rule for target.
+m/fast:
+	$(MAKE) -f CMakeFiles/m.dir/build.make CMakeFiles/m.dir/build
+.PHONY : m/fast
 
 #=============================================================================
 # Target rules for targets named g
@@ -213,6 +278,19 @@ c : cmake_check_build_system
 c/fast:
 	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/build
 .PHONY : c/fast
+
+#=============================================================================
+# Target rules for targets named n
+
+# Build rule for target.
+n : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 n
+.PHONY : n
+
+# fast build rule for target.
+n/fast:
+	$(MAKE) -f CMakeFiles/n.dir/build.make CMakeFiles/n.dir/build
+.PHONY : n/fast
 
 #=============================================================================
 # Target rules for targets named b
@@ -400,6 +478,87 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles/j.dir/build.make CMakeFiles/j.dir/3-2.cpp.s
 .PHONY : 3-2.cpp.s
 
+3-3.o: 3-3.cpp.o
+
+.PHONY : 3-3.o
+
+# target to build an object file
+3-3.cpp.o:
+	$(MAKE) -f CMakeFiles/o.dir/build.make CMakeFiles/o.dir/3-3.cpp.o
+.PHONY : 3-3.cpp.o
+
+3-3.i: 3-3.cpp.i
+
+.PHONY : 3-3.i
+
+# target to preprocess a source file
+3-3.cpp.i:
+	$(MAKE) -f CMakeFiles/o.dir/build.make CMakeFiles/o.dir/3-3.cpp.i
+.PHONY : 3-3.cpp.i
+
+3-3.s: 3-3.cpp.s
+
+.PHONY : 3-3.s
+
+# target to generate assembly for a file
+3-3.cpp.s:
+	$(MAKE) -f CMakeFiles/o.dir/build.make CMakeFiles/o.dir/3-3.cpp.s
+.PHONY : 3-3.cpp.s
+
+3-4-1.o: 3-4-1.cpp.o
+
+.PHONY : 3-4-1.o
+
+# target to build an object file
+3-4-1.cpp.o:
+	$(MAKE) -f CMakeFiles/q.dir/build.make CMakeFiles/q.dir/3-4-1.cpp.o
+.PHONY : 3-4-1.cpp.o
+
+3-4-1.i: 3-4-1.cpp.i
+
+.PHONY : 3-4-1.i
+
+# target to preprocess a source file
+3-4-1.cpp.i:
+	$(MAKE) -f CMakeFiles/q.dir/build.make CMakeFiles/q.dir/3-4-1.cpp.i
+.PHONY : 3-4-1.cpp.i
+
+3-4-1.s: 3-4-1.cpp.s
+
+.PHONY : 3-4-1.s
+
+# target to generate assembly for a file
+3-4-1.cpp.s:
+	$(MAKE) -f CMakeFiles/q.dir/build.make CMakeFiles/q.dir/3-4-1.cpp.s
+.PHONY : 3-4-1.cpp.s
+
+3-4.o: 3-4.cpp.o
+
+.PHONY : 3-4.o
+
+# target to build an object file
+3-4.cpp.o:
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/3-4.cpp.o
+.PHONY : 3-4.cpp.o
+
+3-4.i: 3-4.cpp.i
+
+.PHONY : 3-4.i
+
+# target to preprocess a source file
+3-4.cpp.i:
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/3-4.cpp.i
+.PHONY : 3-4.cpp.i
+
+3-4.s: 3-4.cpp.s
+
+.PHONY : 3-4.s
+
+# target to generate assembly for a file
+3-4.cpp.s:
+	$(MAKE) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/3-4.cpp.s
+.PHONY : 3-4.cpp.s
+
 6-4.o: 6-4.cpp.o
 
 .PHONY : 6-4.o
@@ -535,6 +694,33 @@ d.c.s:
 	$(MAKE) -f CMakeFiles/e.dir/build.make CMakeFiles/e.dir/d.c.s
 .PHONY : d.c.s
 
+e3-2.o: e3-2.cpp.o
+
+.PHONY : e3-2.o
+
+# target to build an object file
+e3-2.cpp.o:
+	$(MAKE) -f CMakeFiles/n.dir/build.make CMakeFiles/n.dir/e3-2.cpp.o
+.PHONY : e3-2.cpp.o
+
+e3-2.i: e3-2.cpp.i
+
+.PHONY : e3-2.i
+
+# target to preprocess a source file
+e3-2.cpp.i:
+	$(MAKE) -f CMakeFiles/n.dir/build.make CMakeFiles/n.dir/e3-2.cpp.i
+.PHONY : e3-2.cpp.i
+
+e3-2.s: e3-2.cpp.s
+
+.PHONY : e3-2.s
+
+# target to generate assembly for a file
+e3-2.cpp.s:
+	$(MAKE) -f CMakeFiles/n.dir/build.make CMakeFiles/n.dir/e3-2.cpp.s
+.PHONY : e3-2.cpp.s
+
 exercise1-12.o: exercise1-12.c.o
 
 .PHONY : exercise1-12.o
@@ -643,6 +829,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/untitled1.dir/build.make CMakeFiles/untitled1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+p87.o: p87.cpp.o
+
+.PHONY : p87.o
+
+# target to build an object file
+p87.cpp.o:
+	$(MAKE) -f CMakeFiles/l.dir/build.make CMakeFiles/l.dir/p87.cpp.o
+.PHONY : p87.cpp.o
+
+p87.i: p87.cpp.i
+
+.PHONY : p87.i
+
+# target to preprocess a source file
+p87.cpp.i:
+	$(MAKE) -f CMakeFiles/l.dir/build.make CMakeFiles/l.dir/p87.cpp.i
+.PHONY : p87.cpp.i
+
+p87.s: p87.cpp.s
+
+.PHONY : p87.s
+
+# target to generate assembly for a file
+p87.cpp.s:
+	$(MAKE) -f CMakeFiles/l.dir/build.make CMakeFiles/l.dir/p87.cpp.s
+.PHONY : p87.cpp.s
+
 struct.o: struct.c.o
 
 .PHONY : struct.o
@@ -724,22 +937,55 @@ struct2.c.s:
 	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/struct2.c.s
 .PHONY : struct2.c.s
 
+test.o: test.cpp.o
+
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) -f CMakeFiles/m.dir/build.make CMakeFiles/m.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) -f CMakeFiles/m.dir/build.make CMakeFiles/m.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) -f CMakeFiles/m.dir/build.make CMakeFiles/m.dir/test.cpp.s
+.PHONY : test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... q"
+	@echo "... p"
 	@echo "... rebuild_cache"
+	@echo "... l"
 	@echo "... k"
 	@echo "... j"
 	@echo "... i"
 	@echo "... edit_cache"
+	@echo "... o"
 	@echo "... h"
+	@echo "... m"
 	@echo "... g"
 	@echo "... f"
 	@echo "... e"
 	@echo "... c"
+	@echo "... n"
 	@echo "... b"
 	@echo "... 3"
 	@echo "... 2"
@@ -758,6 +1004,15 @@ help:
 	@echo "... 3-2.o"
 	@echo "... 3-2.i"
 	@echo "... 3-2.s"
+	@echo "... 3-3.o"
+	@echo "... 3-3.i"
+	@echo "... 3-3.s"
+	@echo "... 3-4-1.o"
+	@echo "... 3-4-1.i"
+	@echo "... 3-4-1.s"
+	@echo "... 3-4.o"
+	@echo "... 3-4.i"
+	@echo "... 3-4.s"
 	@echo "... 6-4.o"
 	@echo "... 6-4.i"
 	@echo "... 6-4.s"
@@ -773,6 +1028,9 @@ help:
 	@echo "... d.o"
 	@echo "... d.i"
 	@echo "... d.s"
+	@echo "... e3-2.o"
+	@echo "... e3-2.i"
+	@echo "... e3-2.s"
 	@echo "... exercise1-12.o"
 	@echo "... exercise1-12.i"
 	@echo "... exercise1-12.s"
@@ -785,6 +1043,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... p87.o"
+	@echo "... p87.i"
+	@echo "... p87.s"
 	@echo "... struct.o"
 	@echo "... struct.i"
 	@echo "... struct.s"
@@ -794,6 +1055,9 @@ help:
 	@echo "... struct2.o"
 	@echo "... struct2.i"
 	@echo "... struct2.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
