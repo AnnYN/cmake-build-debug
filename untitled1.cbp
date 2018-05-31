@@ -37,6 +37,94 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="x">
+				<Option output="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/x" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yanan/CLionProjects/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 x"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="x/fast">
+				<Option output="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/x" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yanan/CLionProjects/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 x/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="u">
+				<Option output="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/u" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yanan/CLionProjects/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 u"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="u/fast">
+				<Option output="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/u" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yanan/CLionProjects/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 u/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="n">
 				<Option output="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/n" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/yanan/CLionProjects/untitled1/cmake-build-debug"/>
@@ -252,6 +340,50 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 p/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="v">
+				<Option output="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/v" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yanan/CLionProjects/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 v"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="v/fast">
+				<Option output="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/v" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yanan/CLionProjects/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 v/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yanan/CLionProjects/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -1077,6 +1209,9 @@
 		<Unit filename="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/3-5-2.cpp">
 			<Option target="s"/>
 		</Unit>
+		<Unit filename="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/3.15.cpp">
+			<Option target="x"/>
+		</Unit>
 		<Unit filename="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/6-4.cpp">
 			<Option target="g"/>
 		</Unit>
@@ -1100,6 +1235,12 @@
 		</Unit>
 		<Unit filename="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/getword.c">
 			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/p104-1.cpp">
+			<Option target="v"/>
+		</Unit>
+		<Unit filename="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/p104.cpp">
+			<Option target="u"/>
 		</Unit>
 		<Unit filename="/Users/yanan/CLionProjects/untitled1/cmake-build-debug/p87.cpp">
 			<Option target="l"/>
