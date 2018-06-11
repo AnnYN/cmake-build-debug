@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named a3
+
+# Build rule for target.
+a3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a3
+.PHONY : a3
+
+# fast build rule for target.
+a3/fast:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/build
+.PHONY : a3/fast
+
+#=============================================================================
 # Target rules for targets named a2
 
 # Build rule for target.
@@ -434,6 +447,19 @@ c : cmake_check_build_system
 c/fast:
 	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/build
 .PHONY : c/fast
+
+#=============================================================================
+# Target rules for targets named a4
+
+# Build rule for target.
+a4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a4
+.PHONY : a4
+
+# fast build rule for target.
+a4/fast:
+	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/build
+.PHONY : a4/fast
 
 #=============================================================================
 # Target rules for targets named b
@@ -769,6 +795,60 @@ untitled1/fast:
 3.15.cpp.s:
 	$(MAKE) -f CMakeFiles/x.dir/build.make CMakeFiles/x.dir/3.15.cpp.s
 .PHONY : 3.15.cpp.s
+
+5-5.o: 5-5.cpp.o
+
+.PHONY : 5-5.o
+
+# target to build an object file
+5-5.cpp.o:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/5-5.cpp.o
+.PHONY : 5-5.cpp.o
+
+5-5.i: 5-5.cpp.i
+
+.PHONY : 5-5.i
+
+# target to preprocess a source file
+5-5.cpp.i:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/5-5.cpp.i
+.PHONY : 5-5.cpp.i
+
+5-5.s: 5-5.cpp.s
+
+.PHONY : 5-5.s
+
+# target to generate assembly for a file
+5-5.cpp.s:
+	$(MAKE) -f CMakeFiles/a3.dir/build.make CMakeFiles/a3.dir/5-5.cpp.s
+.PHONY : 5-5.cpp.s
+
+5-6.o: 5-6.cpp.o
+
+.PHONY : 5-6.o
+
+# target to build an object file
+5-6.cpp.o:
+	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/5-6.cpp.o
+.PHONY : 5-6.cpp.o
+
+5-6.i: 5-6.cpp.i
+
+.PHONY : 5-6.i
+
+# target to preprocess a source file
+5-6.cpp.i:
+	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/5-6.cpp.i
+.PHONY : 5-6.cpp.i
+
+5-6.s: 5-6.cpp.s
+
+.PHONY : 5-6.s
+
+# target to generate assembly for a file
+5-6.cpp.s:
+	$(MAKE) -f CMakeFiles/a4.dir/build.make CMakeFiles/a4.dir/5-6.cpp.s
+.PHONY : 5-6.cpp.s
 
 6-4.o: 6-4.cpp.o
 
@@ -1371,6 +1451,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... a3"
 	@echo "... edit_cache"
 	@echo "... a2"
 	@echo "... z"
@@ -1397,6 +1478,7 @@ help:
 	@echo "... 3"
 	@echo "... e"
 	@echo "... c"
+	@echo "... a4"
 	@echo "... b"
 	@echo "... 2"
 	@echo "... 1"
@@ -1432,6 +1514,12 @@ help:
 	@echo "... 3.15.o"
 	@echo "... 3.15.i"
 	@echo "... 3.15.s"
+	@echo "... 5-5.o"
+	@echo "... 5-5.i"
+	@echo "... 5-5.s"
+	@echo "... 5-6.o"
+	@echo "... 5-6.i"
+	@echo "... 5-6.s"
 	@echo "... 6-4.o"
 	@echo "... 6-4.i"
 	@echo "... 6-4.s"
