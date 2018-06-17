@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named a7
+
+# Build rule for target.
+a7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a7
+.PHONY : a7
+
+# fast build rule for target.
+a7/fast:
+	$(MAKE) -f CMakeFiles/a7.dir/build.make CMakeFiles/a7.dir/build
+.PHONY : a7/fast
+
+#=============================================================================
+# Target rules for targets named a6
+
+# Build rule for target.
+a6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a6
+.PHONY : a6
+
+# fast build rule for target.
+a6/fast:
+	$(MAKE) -f CMakeFiles/a6.dir/build.make CMakeFiles/a6.dir/build
+.PHONY : a6/fast
+
+#=============================================================================
+# Target rules for targets named a5
+
+# Build rule for target.
+a5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a5
+.PHONY : a5
+
+# fast build rule for target.
+a5/fast:
+	$(MAKE) -f CMakeFiles/a5.dir/build.make CMakeFiles/a5.dir/build
+.PHONY : a5/fast
+
+#=============================================================================
 # Target rules for targets named a3
 
 # Build rule for target.
@@ -226,6 +265,19 @@ t : cmake_check_build_system
 t/fast:
 	$(MAKE) -f CMakeFiles/t.dir/build.make CMakeFiles/t.dir/build
 .PHONY : t/fast
+
+#=============================================================================
+# Target rules for targets named a8
+
+# Build rule for target.
+a8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a8
+.PHONY : a8
+
+# fast build rule for target.
+a8/fast:
+	$(MAKE) -f CMakeFiles/a8.dir/build.make CMakeFiles/a8.dir/build
+.PHONY : a8/fast
 
 #=============================================================================
 # Target rules for targets named a1
@@ -877,6 +929,60 @@ untitled1/fast:
 	$(MAKE) -f CMakeFiles/g.dir/build.make CMakeFiles/g.dir/6-4.cpp.s
 .PHONY : 6-4.cpp.s
 
+6-42.o: 6-42.cpp.o
+
+.PHONY : 6-42.o
+
+# target to build an object file
+6-42.cpp.o:
+	$(MAKE) -f CMakeFiles/a8.dir/build.make CMakeFiles/a8.dir/6-42.cpp.o
+.PHONY : 6-42.cpp.o
+
+6-42.i: 6-42.cpp.i
+
+.PHONY : 6-42.i
+
+# target to preprocess a source file
+6-42.cpp.i:
+	$(MAKE) -f CMakeFiles/a8.dir/build.make CMakeFiles/a8.dir/6-42.cpp.i
+.PHONY : 6-42.cpp.i
+
+6-42.s: 6-42.cpp.s
+
+.PHONY : 6-42.s
+
+# target to generate assembly for a file
+6-42.cpp.s:
+	$(MAKE) -f CMakeFiles/a8.dir/build.make CMakeFiles/a8.dir/6-42.cpp.s
+.PHONY : 6-42.cpp.s
+
+6-47.o: 6-47.cpp.o
+
+.PHONY : 6-47.o
+
+# target to build an object file
+6-47.cpp.o:
+	$(MAKE) -f CMakeFiles/a6.dir/build.make CMakeFiles/a6.dir/6-47.cpp.o
+.PHONY : 6-47.cpp.o
+
+6-47.i: 6-47.cpp.i
+
+.PHONY : 6-47.i
+
+# target to preprocess a source file
+6-47.cpp.i:
+	$(MAKE) -f CMakeFiles/a6.dir/build.make CMakeFiles/a6.dir/6-47.cpp.i
+.PHONY : 6-47.cpp.i
+
+6-47.s: 6-47.cpp.s
+
+.PHONY : 6-47.s
+
+# target to generate assembly for a file
+6-47.cpp.s:
+	$(MAKE) -f CMakeFiles/a6.dir/build.make CMakeFiles/a6.dir/6-47.cpp.s
+.PHONY : 6-47.cpp.s
+
 6-5.o: 6-5.cpp.o
 
 .PHONY : 6-5.o
@@ -903,6 +1009,60 @@ untitled1/fast:
 6-5.cpp.s:
 	$(MAKE) -f CMakeFiles/i.dir/build.make CMakeFiles/i.dir/6-5.cpp.s
 .PHONY : 6-5.cpp.s
+
+6-51.o: 6-51.cpp.o
+
+.PHONY : 6-51.o
+
+# target to build an object file
+6-51.cpp.o:
+	$(MAKE) -f CMakeFiles/a7.dir/build.make CMakeFiles/a7.dir/6-51.cpp.o
+.PHONY : 6-51.cpp.o
+
+6-51.i: 6-51.cpp.i
+
+.PHONY : 6-51.i
+
+# target to preprocess a source file
+6-51.cpp.i:
+	$(MAKE) -f CMakeFiles/a7.dir/build.make CMakeFiles/a7.dir/6-51.cpp.i
+.PHONY : 6-51.cpp.i
+
+6-51.s: 6-51.cpp.s
+
+.PHONY : 6-51.s
+
+# target to generate assembly for a file
+6-51.cpp.s:
+	$(MAKE) -f CMakeFiles/a7.dir/build.make CMakeFiles/a7.dir/6-51.cpp.s
+.PHONY : 6-51.cpp.s
+
+6-55.o: 6-55.cpp.o
+
+.PHONY : 6-55.o
+
+# target to build an object file
+6-55.cpp.o:
+	$(MAKE) -f CMakeFiles/a5.dir/build.make CMakeFiles/a5.dir/6-55.cpp.o
+.PHONY : 6-55.cpp.o
+
+6-55.i: 6-55.cpp.i
+
+.PHONY : 6-55.i
+
+# target to preprocess a source file
+6-55.cpp.i:
+	$(MAKE) -f CMakeFiles/a5.dir/build.make CMakeFiles/a5.dir/6-55.cpp.i
+.PHONY : 6-55.cpp.i
+
+6-55.s: 6-55.cpp.s
+
+.PHONY : 6-55.s
+
+# target to generate assembly for a file
+6-55.cpp.s:
+	$(MAKE) -f CMakeFiles/a5.dir/build.make CMakeFiles/a5.dir/6-55.cpp.s
+.PHONY : 6-55.cpp.s
 
 6-6.o: 6-6.cpp.o
 
@@ -1451,6 +1611,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... a7"
+	@echo "... a6"
+	@echo "... a5"
 	@echo "... a3"
 	@echo "... edit_cache"
 	@echo "... a2"
@@ -1461,6 +1624,7 @@ help:
 	@echo "... n"
 	@echo "... q"
 	@echo "... t"
+	@echo "... a8"
 	@echo "... a1"
 	@echo "... r"
 	@echo "... p"
@@ -1523,9 +1687,21 @@ help:
 	@echo "... 6-4.o"
 	@echo "... 6-4.i"
 	@echo "... 6-4.s"
+	@echo "... 6-42.o"
+	@echo "... 6-42.i"
+	@echo "... 6-42.s"
+	@echo "... 6-47.o"
+	@echo "... 6-47.i"
+	@echo "... 6-47.s"
 	@echo "... 6-5.o"
 	@echo "... 6-5.i"
 	@echo "... 6-5.s"
+	@echo "... 6-51.o"
+	@echo "... 6-51.i"
+	@echo "... 6-51.s"
+	@echo "... 6-55.o"
+	@echo "... 6-55.i"
+	@echo "... 6-55.s"
 	@echo "... 6-6.o"
 	@echo "... 6-6.i"
 	@echo "... 6-6.s"
